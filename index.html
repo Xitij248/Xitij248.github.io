@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Gradio Web Component -->
     <script
 	    type="module"
@@ -56,9 +59,9 @@
             <a href="#home" class="text-2xl font-bold text-white hover:text-teal-400 transition-colors">Kshitij Singh Sagar</a>
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-teal-400 transition-colors">Experience</a>
                 <a href="#skills" class="hover:text-teal-400 transition-colors">Skills</a>
                 <a href="#ai-project" class="hover:text-teal-400 transition-colors">AI Project</a>
-                <a href="#experience" class="hover:text-teal-400 transition-colors">Experience</a>
                 <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors">Contact Me</a>
             </div>
             <!-- Mobile Menu Button -->
@@ -71,9 +74,9 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
             <a href="#about" class="block py-2 px-6 text-center hover:bg-slate-700">About</a>
+            <a href="#experience" class="block py-2 px-6 text-center hover:bg-slate-700">Experience</a>
             <a href="#skills" class="block py-2 px-6 text-center hover:bg-slate-700">Skills</a>
             <a href="#ai-project" class="block py-2 px-6 text-center hover:bg-slate-700">AI Project</a>
-            <a href="#experience" class="block py-2 px-6 text-center hover:bg-slate-700">Experience</a>
             <a href="#contact" class="block py-2 px-6 text-center hover:bg-slate-700">Contact Me</a>
         </div>
     </header>
@@ -100,7 +103,6 @@
                 </div>
             </div>
             <div class="md:w-1/2 mt-10 md:mt-0">
-                <!-- Replace with your profile picture -->
                 <img src="me/unnamed.webp" alt="Kshitij Singh" class="w-96 h-96 rounded-full shadow-2xl mx-auto">
             </div>
         </section>
@@ -112,20 +114,99 @@
                 <div class="md:w-2/3">
                     <p class="mb-4">Hello! I'm Kshitij Singh Sagar, an automotive engineer working at Daimler Trucks Innovation Center India (DTICI). My professional journey has taken me through key areas of vehicle technology, including Exhaust Systems, Battery Management Systems, and Body Control Modules.</p>
                     <p class="mb-4">I thrive on challenging work that involves brainstorming and analytical thinking. I am an enthusiast in AI and love innovative and creative work. My goal is to build a deep well of knowledge in the tech world and lead excellent teams to accomplish big goals that drive society towards a better place.</p>
-                    <p>When I'm not engineering, I love traveling and cooking. My most memorable trips have been motorcycle journeys to Ladakh and Spiti.</p>
                 </div>
                  <div class="md:w-1/3">
-                    <!-- You can put another image or an illustration here -->
                      <img src="me/LinkedinDP.jpg" alt="Illustration" class="rounded-lg shadow-lg mx-auto">
                  </div>
             </div>
         </section>
 
-        <!-- Section 3: Skills -->
+        <!-- Section 3: Interests -->
+        <section id="interests" class="py-20 bg-slate-800/50 rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Interests</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="flex flex-col items-center space-y-3">
+                    <i class="fa-solid fa-motorcycle text-4xl text-teal-400"></i>
+                    <h3 class="text-xl font-semibold text-white">Motorcycling</h3>
+                    <p>Adventurous trips to Ladakh and Spiti, exploring new terrains on two wheels.</p>
+                </div>
+                <div class="flex flex-col items-center space-y-3">
+                    <i class="fa-solid fa-utensils text-4xl text-teal-400"></i>
+                    <h3 class="text-xl font-semibold text-white">Cooking</h3>
+                    <p>Experimenting with new recipes and exploring different cuisines.</p>
+                </div>
+                <div class="flex flex-col items-center space-y-3">
+                    <i class="fa-solid fa-plane-departure text-4xl text-teal-400"></i>
+                    <h3 class="text-xl font-semibold text-white">Traveling</h3>
+                    <p>Passionate about discovering new places and experiencing different cultures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Experience -->
+        <section id="experience" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Professional Experience</h2>
+            <div class="max-w-3xl mx-auto relative">
+                <!-- Vertical timeline bar -->
+                <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-slate-700"></div>
+                
+                <!-- Timeline Item 1: Daimler -->
+                <div class="relative mb-8">
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-xl font-bold text-white">Senior Engineer</h3>
+                            <p class="text-teal-400">Daimler Truck Innovation Center India</p>
+                            <p class="text-sm text-slate-400">May 2022 - Present</p>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <div class="bg-slate-800 p-4 rounded-lg shadow-lg">
+                                <p>Working on the Body Control Module, with a focus on Exterior Lighting functions and Event Data Recorders.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 w-4 h-4 bg-teal-500 rounded-full border-4 border-slate-900"></div>
+                </div>
+
+                <!-- Timeline Item 2: Bosch Senior Engineer -->
+                <div class="relative mb-8">
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="bg-slate-800 p-4 rounded-lg shadow-lg">
+                                <p>Software System Designer for Battery Management System (BDR).</p>
+                            </div>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <h3 class="text-xl font-bold text-white">Senior Software Engineer</h3>
+                            <p class="text-teal-400">Bosch Global Software Technologies</p>
+                            <p class="text-sm text-slate-400">Jan 2022 - May 2022</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 w-4 h-4 bg-teal-500 rounded-full border-4 border-slate-900"></div>
+                </div>
+
+                <!-- Timeline Item 3: Bosch Engineer -->
+                <div class="relative">
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-xl font-bold text-white">Engineer</h3>
+                            <p class="text-teal-400">Bosch Global Software Technologies</p>
+                            <p class="text-sm text-slate-400">Sep 2018 - Jan 2022</p>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <div class="bg-slate-800 p-4 rounded-lg shadow-lg">
+                                <p>Software Developer for Exhaust systems (P and T sensors) and System Designer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 w-4 h-4 bg-teal-500 rounded-full border-4 border-slate-900"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Skills -->
         <section id="skills" class="py-20 bg-slate-800/50 rounded-xl">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Skills</h2>
             <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <!-- Skill Category 1: Core Engineering -->
                 <div class="space-y-4">
                     <h3 class="text-xl font-semibold text-teal-400">Core Skills</h3>
                     <ul class="space-y-2">
@@ -135,7 +216,6 @@
                         <li>Automotive Systems</li>
                     </ul>
                 </div>
-                <!-- Skill Category 2: Software & Tools -->
                 <div class="space-y-4">
                     <h3 class="text-xl font-semibold text-teal-400">Software & Tools</h3>
                     <ul class="space-y-2">
@@ -145,7 +225,6 @@
                         <li>Data Science with Python</li>
                     </ul>
                 </div>
-                <!-- Skill Category 3: Methodologies -->
                 <div class="space-y-4">
                     <h3 class="text-xl font-semibold text-teal-400">Methodologies</h3>
                     <ul class="space-y-2">
@@ -155,7 +234,6 @@
                         <li>Software Development</li>
                     </ul>
                 </div>
-                <!-- Skill Category 4: Certifications -->
                 <div class="space-y-4">
                     <h3 class="text-xl font-semibold text-teal-400">Certifications</h3>
                     <ul class="space-y-2">
@@ -168,7 +246,7 @@
             </div>
         </section>
         
-        <!-- Section 4: AI Project -->
+        <!-- Section 6: AI Project -->
         <section id="ai-project" class="py-20">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">AI Project: LinkedIn Agent</h2>
             <div class="max-w-3xl mx-auto bg-slate-800 rounded-lg overflow-hidden shadow-lg p-2">
@@ -177,43 +255,7 @@
             <p class="mt-6 text-center text-slate-400 max-w-2xl mx-auto">This is an interactive AI agent I built and deployed on Hugging Face. It's trained on my professional background and can answer questions about my skills and experience.</p>
         </section>
 
-        <!-- Section 5: Experience -->
-        <section id="experience" class="py-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Professional Experience</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Experience Card 1: Daimler -->
-                <div class="bg-slate-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 shadow-lg">
-                    <img src="me/daimler_truck_innovation_center_india_cover.jpg" alt="Daimler Truck" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Senior Engineer @ DTICI</h3>
-                        <p class="text-sm mb-4">Working on the Body Control Module, with a focus on Exterior Lighting functions and Event Data Recorders. Responsible for software system design and development.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Body Control Module</span>
-                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Automotive</span>
-                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">C</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Card 2: Bosch -->
-                <div class="bg-slate-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 shadow-lg">
-                    <img src="me/Bosch.png" alt="Bosch" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Engineer @ Bosch</h3>
-                        <p class="text-sm mb-4">Gained experience as a Software Developer for Exhaust Systems (P and T sensors) and as a Software System Designer for Battery Management Systems (BMS).</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">BMS</span>
-                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Exhaust Systems</span>
-                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">System Design</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Section 6: Contact -->
+        <!-- Section 7: Contact -->
         <section id="contact" class="py-20 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
             <p class="max-w-2xl mx-auto mb-8">

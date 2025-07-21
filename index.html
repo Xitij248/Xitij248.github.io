@@ -235,6 +235,11 @@
     </footer>
 
     <script>
+        // Prevent browser from restoring scroll position on reload
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        
         // Force scroll to top on page load to prevent iframe focus jump
         window.onload = function() {
             window.scrollTo(0, 0);

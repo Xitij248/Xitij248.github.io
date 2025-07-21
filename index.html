@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitij Singh | Automotive Engineer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles for the typewriter effect and font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .typewriter h1 {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid #14b8a6; /* The typewriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .1em; /* Adjust as needed */
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #14b8a6; }
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <!-- Header & Navigation -->
+    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white hover:text-teal-400 transition-colors">Kshitij Singh</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors">Skills</a>
+                <a href="#ai-project" class="hover:text-teal-400 transition-colors">AI Project</a>
+                <a href="#experience" class="hover:text-teal-400 transition-colors">Experience</a>
+                <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors">Contact Me</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <a href="#about" class="block py-2 px-6 text-center hover:bg-slate-700">About</a>
+            <a href="#skills" class="block py-2 px-6 text-center hover:bg-slate-700">Skills</a>
+            <a href="#ai-project" class="block py-2 px-6 text-center hover:bg-slate-700">AI Project</a>
+            <a href="#experience" class="block py-2 px-6 text-center hover:bg-slate-700">Experience</a>
+            <a href="#contact" class="block py-2 px-6 text-center hover:bg-slate-700">Contact Me</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Section 1: Hero -->
+        <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center">
+            <div class="text-center md:text-left md:w-1/2 md:pr-10">
+                <div class="typewriter mb-4">
+                    <h1 class="text-3xl md:text-4xl font-bold text-white">Hi, I'm Kshitij Singh</h1>
+                </div>
+                <p class="text-xl md:text-2xl text-teal-400 font-medium mb-6">Senior Automotive Engineer & AI Enthusiast</p>
+                <p class="mb-8 max-w-lg mx-auto md:mx-0">
+                    I specialize in developing and designing robust automotive software systems, with experience in Body Control Modules, BMS, and Exhaust Systems. I am passionate about innovative technology and AI.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="https://github.com/your-username" target="_blank" class="text-slate-400 hover:text-teal-400 transition-colors" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kshitij-singh-514353148" target="_blank" class="text-slate-400 hover:text-teal-400 transition-colors" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <!-- Replace with your profile picture -->
+                <img src="D:\job\GITHUB\Xitij248.github.io\me\unnamed.webp" alt="Kshitij Singh" class="rounded-full shadow-2xl mx-auto">
+            </div>
+        </section>
+
+        <!-- Section 2: About Me -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">About Me</h2>
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-2/3">
+                    <p class="mb-4">Hello! I'm Kshitij Singh, an automotive engineer working at Daimler Trucks Innovation Center India (DTICI). My professional journey has taken me through key areas of vehicle technology, including Exhaust Systems, Battery Management Systems, and Body Control Modules.</p>
+                    <p class="mb-4">I thrive on challenging work that involves brainstorming and analytical thinking. I am an enthusiast in AI and love innovative and creative work. My goal is to build a deep well of knowledge in the tech world and lead excellent teams to accomplish big goals that drive society towards a better place.</p>
+                    <p>When I'm not engineering, I love traveling and cooking. My most memorable trips have been motorcycle journeys to Ladakh and Spiti.</p>
+                </div>
+                 <div class="md:w-1/3">
+                    <!-- You can put another image or an illustration here -->
+                     <img src="D:\job\GITHUB\Xitij248.github.io\me\LinkedinDP.jpg" alt="Illustration" class="rounded-lg shadow-lg mx-auto">
+                 </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Skills -->
+        <section id="skills" class="py-20 bg-slate-800/50 rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Skills</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Skill Category 1: Core Engineering -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-teal-400">Core Skills</h3>
+                    <ul class="space-y-2">
+                        <li>C Programming</li>
+                        <li>Python</li>
+                        <li>MATLAB/SIMULINK</li>
+                        <li>Automotive Systems</li>
+                    </ul>
+                </div>
+                <!-- Skill Category 2: Software & Tools -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-teal-400">Software & Tools</h3>
+                    <ul class="space-y-2">
+                        <li>GitHub</li>
+                        <li>Automotive Radar</li>
+                        <li>System Design</li>
+                        <li>Data Science with Python</li>
+                    </ul>
+                </div>
+                <!-- Skill Category 3: Methodologies -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-teal-400">Methodologies</h3>
+                    <ul class="space-y-2">
+                        <li>Scrum (PSM I Certified)</li>
+                        <li>Agile Development</li>
+                        <li>System Design</li>
+                        <li>Software Development</li>
+                    </ul>
+                </div>
+                <!-- Skill Category 4: Certifications -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-teal-400">Certifications</h3>
+                    <ul class="space-y-2">
+                        <li>Professional Scrum Master I</li>
+                        <li>ISTQB® Foundation Level</li>
+                        <li>Python for Data Science</li>
+                        <li>Automotive Radar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: AI Project -->
+        <section id="ai-project" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">AI Project: LinkedIn Agent</h2>
+            <div class="max-w-4xl mx-auto bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+                 <iframe
+                    src="https://xitij248-linkedin-agent.hf.space"
+                    frameborder="0"
+                    width="100%"
+                    style="min-height: 500px;"
+                    class="rounded-lg"
+                ></iframe>
+            </div>
+            <p class="mt-6 text-center text-slate-400 max-w-2xl mx-auto">This is an interactive AI agent I built and deployed on Hugging Face. It's trained on my professional background and can answer questions about my skills and experience.</p>
+        </section>
+
+        <!-- Section 5: Experience -->
+        <section id="experience" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Professional Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Experience Card 1: Daimler -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <img src="D:\job\GITHUB\Xitij248.github.io\me\daimler_truck_innovation_center_india_cover.jpg" alt="Daimler Truck" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Senior Engineer @ DTICI</h3>
+                        <p class="text-sm mb-4">Working on the Body Control Module, with a focus on Exterior Lighting functions and Event Data Recorders. Responsible for software system design and development.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Body Control Module</span>
+                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Automotive</span>
+                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2: Bosch -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <img src="D:\job\GITHUB\Xitij248.github.io\me\Bosch.png" alt="Bosch" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Engineer @ Bosch</h3>
+                        <p class="text-sm mb-4">Gained experience as a Software Developer for Exhaust Systems (P and T sensors) and as a Software System Designer for Battery Management Systems (BMS).</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">BMS</span>
+                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Exhaust Systems</span>
+                            <span class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">System Design</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 6: Contact -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="max-w-2xl mx-auto mb-8">
+                I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll get back to you!
+            </p>
+            <a href="mailto:xitij248@gmail.com" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold text-lg px-8 py-4 rounded-lg transition-colors">
+                Say Hello
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800/50">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-400">
+            <p>&copy; 2024 Kshitij Singh. All Rights Reserved.</p>
+            <p>Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Hide mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

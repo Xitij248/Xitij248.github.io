@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kshitij Singh | Automotive Engineer</title>
+    <title>Kshitij Singh Sagar | Automotive Engineer</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -95,7 +95,7 @@
             </div>
             <div class="md:w-1/2 mt-10 md:mt-0">
                 <!-- Replace with your profile picture -->
-                <img src="me/unnamed.webp" alt="Kshitij Singh" class="w96 h-96 rounded-full shadow-2xl mx-auto">
+                <img src="me/unnamed.webp" alt="Kshitij Singh" class="w-96 h-96 rounded-full shadow-2xl mx-auto">
             </div>
         </section>
 
@@ -229,12 +229,17 @@
     <!-- Footer -->
     <footer class="bg-slate-800/50">
         <div class="container mx-auto px-6 py-4 text-center text-slate-400">
-            <p>&copy; 2024 Kshitij Singh. All Rights Reserved.</p>
+            <p>&copy; 2024 Kshitij Singh Sagar. All Rights Reserved.</p>
             <p>Built with <span class="text-red-500">&hearts;</span> and Tailwind CSS</p>
         </div>
     </footer>
 
     <script>
+        // Force scroll to top on page load to prevent iframe focus jump
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+
         // JavaScript for mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');

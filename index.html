@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Gradio Web Component -->
+    <script
+	    type="module"
+	    src="https://gradio.s3-us-west-2.amazonaws.com/5.34.2/gradio.js"
+    ></script>
+
     <style>
         /* Custom styles for the typewriter effect and font */
         body {
@@ -165,15 +171,8 @@
         <!-- Section 4: AI Project -->
         <section id="ai-project" class="py-20">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">AI Project: LinkedIn Agent</h2>
-            <div class="max-w-4xl mx-auto bg-slate-800 rounded-lg overflow-hidden shadow-lg">
-                 <iframe
-                    src="https://xitij248-linkedin-agent.hf.space"
-                    frameborder="0"
-                    width="100%"
-                    style="min-height: 500px;"
-                    class="rounded-lg"
-                    loading="lazy"
-                ></iframe>
+            <div class="max-w-3xl mx-auto bg-slate-800 rounded-lg overflow-hidden shadow-lg p-2">
+                 <gradio-app src="https://xitij248-linkedin-agent.hf.space"></gradio-app>
             </div>
             <p class="mt-6 text-center text-slate-400 max-w-2xl mx-auto">This is an interactive AI agent I built and deployed on Hugging Face. It's trained on my professional background and can answer questions about my skills and experience.</p>
         </section>
